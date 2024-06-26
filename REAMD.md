@@ -8,12 +8,9 @@ fun main() {
 }
 
 fun sumaPares(a:Int,b:Int): Int{
-    if (a%2!=0)return -1
-    if (b%2!=0)return -1
+     if( b%2!=0 || a%2!=0) return -1
     if (a < 0 && b < 0)  return -1 
-    
-
-    return a+b
+     return a+b
 }
 
 fun sumaParesTest():Boolean{
