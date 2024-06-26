@@ -1,0 +1,21 @@
+fun main() {
+    println("TDD")
+      if (validarMayoriaEdadTest()) println("ACCEPTED") else println("REJECTED")
+};
+
+fun validarMayoriaEdad(edad: Int): String {
+    if (edad < 0) {
+        return "REJECTED"
+    }
+    return if (edad >= 18) {
+        "ACCEPTED"
+    } else {
+        "REJECTED"
+    }
+};
+fun validarMayoriaEdadTest(): Boolean {
+    val caso1 = validarMayoriaEdad(-17) == ""
+  
+    
+    return caso1 
+}
