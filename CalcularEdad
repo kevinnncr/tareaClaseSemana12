@@ -14,8 +14,10 @@ fun validarMayoriaEdad(edad: Int): String {
     }
 };
 fun validarMayoriaEdadTest(): Boolean {
-    val caso1 = validarMayoriaEdad(-17) == ""
+    val actualValue = validarMayoriaEdad(-17) 
+    val expectedValue = "ACCEPTED"
   
     
-    return caso1 
+    return actualValue == expectedValue
+
 }
